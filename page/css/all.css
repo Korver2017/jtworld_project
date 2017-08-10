@@ -602,7 +602,8 @@ table {
 body, button {
   outline: none;
   overflow-x: hidden;
-  font-family: 'Noto Sans TC', sans-serif; }
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: rgba(11, 173, 247, 0.1); }
 
 ::-moz-selection {
   background: #0BADF7; }
@@ -712,6 +713,7 @@ body, button {
   background-attachment: fixed; }
 
 .header {
+  margin-top: 50px;
   width: 120%;
   overflow: hidden;
   -webkit-transform: rotate(-3deg);
@@ -1482,6 +1484,8 @@ body, button {
     padding: 40px; } }
 
 @media (max-width: 1024px) {
+  .coverImg {
+    display: none; }
   .wow {
     -webkit-animation-name: none !important;
     animation-name: none !important;
@@ -1602,7 +1606,7 @@ body, button {
   .top {
     width: 44px;
     height: 44px;
-    bottom: 128px; }
+    bottom: 50px; }
   .line {
     width: 44px;
     height: 44px;

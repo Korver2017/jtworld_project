@@ -233,6 +233,9 @@ $light: lighten($color, 40%);
   }
 }
 @media(max-width: 1024px){
+  .coverImg {
+    display: none;
+  }
   .wow {
       animation-name: none !important;
       visibility: visible !important;
@@ -382,7 +385,7 @@ $light: lighten($color, 40%);
   .top {
     width: 44px;
     height: 44px;
-    bottom: 128px;
+    bottom: 50px;
   }
   .line {
     width: 44px;
