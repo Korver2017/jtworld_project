@@ -98,11 +98,25 @@ $(document).ready(function() {
 	     }
 	});
 
-	$('.scrollTop').on('click', function(event) {
+  $('.scroll').on('click', function(event) {
     event.preventDefault();
     var target = $(this).attr('href');
     var targetPos = $(target).offset().top;
     $('html, body').animate({scrollTop: targetPos - 200}, 1000);
+  });
+
+	$('.scrollTop').on('click', function(event) {
+    event.preventDefault();
+    var target = $(this).attr('href');
+    var targetPos = $(target).offset().top;
+    $('html, body').animate({scrollTop: targetPos - 50}, 1000);
+  });
+
+  $('.scrollDown').on('click', function(event) {
+    event.preventDefault();
+    var target = $(this).attr('href');
+    var targetPos = $(target).offset().top;
+    $('html, body').animate({scrollTop: targetPos - 100}, 1000);
   });
 
 	$('.room').on('click', function(event) {
@@ -115,7 +129,7 @@ $(document).ready(function() {
   $('.btn').on('click', function(event) {
     event.preventDefault();
     var targetPos = $('#payment').offset().top;
-    $('html, body').animate({scrollTop: targetPos}, 1000);
+    $('html, body').animate({scrollTop: targetPos - 30}, 1000);
   });
 		  
   function atvImg(){
