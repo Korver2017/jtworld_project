@@ -1,0 +1,72 @@
+.flip-container {
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  display: inline-block;
+}
+
+.front,
+.anotherSide {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#flip .front p {
+    color: #0BADF7;
+}
+
+#flip .anotherSide {
+  background: #fff;
+  p {
+  padding: 10px;
+  font-size: 23px;
+  line-height: 23px;
+  position: relative;
+  top: 0px;
+  color: #fff;
+  background-color: #0BADF7;
+  }
+}
+
+.anotherSide {
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+
+.flipped .anotherSide {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.flipped .front {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.anotherSide .footer {
+  width: 450px;
+  height: 20px;
+  background-color: #FC546B;
+  position: absolute;
+  top: 450px;
+  border-radius: 0px 0px 15px 15px;
+}

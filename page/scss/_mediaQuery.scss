@@ -1,0 +1,519 @@
+$color: #4A362C;
+$light: lighten($color, 40%);
+@media(max-width: 1710px){
+  .aboutTitle {
+    display: none;
+  }
+  .content p {
+    width: 50%;
+    margin-right: 40%;
+    margin-top: 400px;
+  }
+  .productList {
+    margin-left: 0%;
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+  }
+  .production {
+    transform: rotate(0deg);
+    width: 33.33333%;
+    height: 300px;
+    margin-top: 0;
+  }
+  .productionWhole {
+    display: none;
+  }
+  .production:hover {
+    width: 33.33333%;
+    margin-left: 0;
+  }
+  .inner {
+    width: 100%;
+  }
+  .inner h3 {
+    line-height: 300px;
+    margin-right: 150px;
+  }
+  .mask {
+    transform: rotate(0deg);
+  }
+  .slider-wrapper {
+    float: none;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .introRooms {
+    float: none;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .facility {
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    p {
+      min-width: 300px;
+      margin-left: 40%;
+      margin-top: 20px;
+    }
+  }
+  .price {
+    width: 46%;
+    margin-left: 4%;
+    float: left;
+    margin-bottom: 0;
+    p {
+      width: 100%;
+    }
+  }
+  .map {
+    #map {
+      margin-left: 5%;
+    }
+    p {
+      width: 38%;
+    }
+  }
+  #payment {
+    .transfer {
+      height: 1200px;
+    }
+    .callOff {
+      height: 1200px;
+    }
+    .order {
+      height: 1200px;
+    }
+  }
+}
+@media(max-width: 1680px){
+  .content p {
+    width: 30%;
+    margin-right: 40%;
+    margin-top: 400px;
+  }
+  .spaMask {
+    background-position: 0 -300px;
+  }
+  .medMask {
+    background-position: -100px -200px;
+  }
+  .legoMask {
+    background-position: -300px -300px;
+  }
+  .morMask {
+    background-position: -600px -250px;
+  }
+  .indMask {
+    background-position: -60px -420px;
+  }
+  .backMask {
+    background-position: 0 -500px;
+  }
+  .facility p {
+    margin-left: 50%;
+  }
+  .price {
+    margin-top: 20px;
+  }
+  .lego .nivo-controlNav.nivo-thumbs-enabled {
+    width: 100%;
+  }
+  .mor .nivo-controlNav.nivo-thumbs-enabled {
+    width: 100%;
+  }
+  .whole .nivo-controlNav.nivo-thumbs-enabled {
+    width: 55%;
+  }
+  .btnWhole {
+    margin-bottom: 100px;
+  }
+  #payment {
+    height: 900px;
+  }
+}
+@media(max-width: 1440px){
+  .content p {
+    margin-top: 350px;
+  }
+  .whole .nivo-controlNav.nivo-thumbs-enabled {
+    width: 60%;
+  }
+  #payment {
+    height: 1200px;
+  }
+}
+@media(max-width: 1199px){
+  .facility p {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #payment {
+    h3 {
+      margin-top: 0;
+      padding-top: 30px;
+    }
+    p {
+      margin-bottom: 0;
+      padding-bottom: 30px;
+    }
+    .transfer {
+      width: 100%;
+      float: none;
+      height: auto;
+    }
+    .callOff {
+      width: 100%;
+      float: none;
+      height: auto;
+    }
+    .order {
+      width: 100%;
+      float: none;
+      height: auto;
+    }
+  }
+  #st-1 {
+    float: none;
+    margin-left: 50px;
+    padding-bottom: 50px;
+  }
+  .button_container {
+    display: block;
+  }
+  .control {
+    display: none;
+  }
+}
+@media(max-width: 1152px){
+  .content p {
+    width: 40%;
+  }
+  .whole .nivo-controlNav.nivo-thumbs-enabled {
+    width: 80%;
+  }
+  #payment {
+    height: auto;
+  }
+  .rwdQa {
+    width: 100%;
+  }
+}
+@media(max-width: 1030px){
+  .content p {
+    width: 55%;
+    margin-right: 30%;
+  }
+  .infoWrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .note {
+    float: none;
+    width: 100%;
+  }
+  .service {
+    float: none;
+    width: 100%;
+  }
+  .map {
+    #map {
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+    }
+    p {
+      border-radius: 0;
+      width: 100%;
+      margin: 0;
+      padding: 40px;
+    }
+  }
+}
+@media(max-width: 1024px){
+  .wow {
+      animation-name: none !important;
+      visibility: visible !important;
+  }
+  .content p {
+    width: 45%;
+    margin-right: 35%;
+  }
+  .theme-default .nivo-controlNav.nivo-thumbs-enabled {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .back .theme-default .nivo-controlNav.nivo-thumbs-enabled {
+    width: 100%;
+  }
+  .whole .theme-default .nivo-controlNav.nivo-thumbs-enabled {
+    width: 90%;
+  }
+  .imgWrap {
+    background-attachment: scroll;
+  }
+  .aboutBg {
+    background-attachment: scroll;
+  }
+}
+@media(max-width: 800px){
+  .content p {
+    width: 50%;
+    margin-right: 31.5%;
+    margin-top: 320px;
+  }
+  .imgWrapBottom {
+  	display: none;
+  }
+  .productList {
+    margin-left: 0%;
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+  }
+  .production {
+    transform: rotate(0deg);
+    width: 50%;
+    height: 250px;
+  }
+  .productionWhole {
+    display: none;
+  }
+  .production:hover {
+    width: 50%;
+    margin-left: 0;
+  }
+  .inner h3 {
+    line-height: 300px;
+    margin-right: 150px;
+  }
+  .mask {
+    transform: rotate(0deg);
+  }
+  .cover {
+  	width: 49%;
+  }
+  #map {
+  	width: 100%;
+  }
+  .connect {
+  	line-height: 2;
+  }
+  .copyright {
+  	float: none;
+  }
+}
+@media(max-width: 768px){
+  .wow {
+      animation-name: none !important;
+      visibility: visible !important;
+  }
+  .line:hover {
+    transform: translateX(0) translateY(0);
+  }
+  .fb:hover {
+    transform: translateX(0) translateY(0);
+  }
+  .top:hover {
+    transform: translateX(0) translateY(0);
+  }
+  .imgWrap {
+    background-attachment: scroll;
+  }
+  .aboutBg {
+    background-attachment: scroll;
+  }
+  .content p {
+    margin-top: 370px;
+  }
+  .product::before {
+    background-color: rgba(255,255,255,.9);
+  }
+  .product {
+    background-image: none;
+    background-color: #0BADF7;
+  }
+  .theme-default .nivo-controlNav.nivo-thumbs-enabled {
+    width: 80%;
+  }
+  .facility {
+    width: 50%;
+    margin-top: 80px;
+    p {
+      margin: 0;
+      float: left;
+      width: 50%;
+    }
+  }
+  .price {
+    float: left;
+    margin-left: 0;
+    width: 50%;
+  }
+	.btn:last-child {
+    margin-bottom: 50px;
+  }
+  .map {
+    #map {
+      width: 100%;
+    }
+  }
+  #qa p {
+    line-height: 30px;
+  }
+  #qa ul li {
+    padding-top: 25px;
+    input[type=checkbox] {
+      bottom: -10px;
+    }
+  }
+  .rwdQa:last-child {
+    margin-bottom: 10px;
+  }
+}
+@media(max-width: 767px){
+  .p {
+    font-size: 12px;
+  }
+}
+@media(max-width: 680px){
+  .top {
+    width: 44px;
+    height: 44px;
+    bottom: 128px;
+  }
+  .line {
+    width: 44px;
+    height: 44px;
+    bottom: 79px;
+  }
+  .fb {
+    width: 44px;
+    height: 44px;
+    bottom: 30px;
+  }
+  .header {
+    margin-right: -500px;
+  }
+  .about {
+    display: none;
+  }
+  .aboutBg {
+    display: none;
+  }
+}
+@media(max-width: 414px){
+  .top {
+    bottom: 50px;
+  }
+  .coverImg {
+    display: none;
+  }
+  .hide {
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    background-color: $light;
+  }
+  hr {
+    border: 2px solid;
+    width: 300px;
+    color: #D1CDC8;
+  }
+  .hide > h2 {
+      color: #D1CDC8;
+      width: 150px;
+      font-size: 40px;
+      margin: 0 auto;
+      margin-top: -30px;
+      padding-bottom: 70px;
+      background-color: $light;
+      text-align: center;
+  }
+  .rooms h3 {
+    font-size: 30px;
+    margin-right: 0;
+  }
+  .spaMask {
+      background-position: -300px -350px;
+  }
+  .medMask {
+      background-position: -100px -300px;
+  }
+  .legoMask {
+      background-position: -500px -300px;
+  }
+  .morMask {
+      background-position: -600px -300px;
+  }
+  .indMask {
+      background-position: -60px -520px;
+  }
+  .product h2 {
+    font-size: 26px;
+  }
+  #slider2 {
+    margin-top: 30px;
+  }
+  .theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+    width: 108px;
+  }
+  .slider-wrapper {
+    padding-top: 0;
+  }
+  .introRooms {
+    margin-top: 10px;
+  }
+  .facility {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .facility p {
+    float: none;
+    width: 100%;
+  }
+  .price {
+    float: none;
+    width: 100%;
+  }
+  .price p {
+    float: none;
+    width: 100%;
+  }
+  .cover {
+    width: 100%;
+  }
+  .rwdQa {
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .connect {
+    display: none;
+  }
+  .connectRwd {
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+    line-height: 2;
+  }
+  .copyright {
+    padding-left: 20px;
+  }
+  #st-1 {
+    margin-left: 20px;
+  }
+}
+@media(max-width: 375px){
+  .p {
+    height: 0;
+  }
+}
+@media(max-width: 320px){
+  .product h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,669 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import 'http://cssicon.space/css/icons.css';
+@import 'mixin';
+@import 'reset';
+@import 'sbimenu';
+@import 'card';
+@import 'qa';
+@import 'flipCard';
+@import 'burgerMenu';
+$color: #0BADF7;
+
+body, button {
+  outline: none;
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+::selection {
+  background: $color;
+}
+.hide {
+  display: none;
+}
+.wrap {
+  max-width: 1920px;
+  overflow: hidden;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.fb {
+  z-index: 99;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  transition: all .3s;
+}
+.fb:hover {
+  transform: translateY(-5px) translateX(-5px) rotate(360deg);
+}
+.line {
+  z-index: 99;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  right: 20px;
+  bottom: 122px;
+  transition: all .3s;
+}
+.line:hover {
+  transform: translateY(-5px) translateX(-5px) rotate(360deg);
+}
+.top {
+  z-index: 99;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  transition: all .3s;
+}
+.top:hover {
+  transform: translateY(-5px) translateX(-5px) rotate(360deg);
+}
+.control {
+  float: none;
+  position: absolute;
+  top: 20px;
+  right: -80px;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  background-image: url('../img/menu.png');
+  background-size: cover;
+}
+.nav {
+  transform: translateX(-925px);
+  border-bottom: 0.5px solid rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: all .3s;
+}
+.nav.open {
+  transform: translateX(0);
+}
+.coverImg {
+  width: 100%;
+  margin-bottom: -100px;
+  min-width: 1500px;
+}
+.headerCover {
+  margin-bottom: -100px;
+  height: 500px;
+  width: 100%;
+  @include bgi-parallex('cover.jpg');
+}
+.header {
+    width: 120%;
+    overflow: hidden;
+    transform: rotate(-3deg);
+    margin-left: -5%;
+    margin-bottom: -100px;
+}
+.imgWrap {
+  transform: rotate(3deg);
+  width: 110%;
+  height: 800px;
+  margin-left: -5%;
+  margin-top: -100px;
+  @include bgi-parallex('lobby.jpg');
+  background-position: top;
+}
+.about {
+    position: relative;
+    z-index: 1;
+    width: 200%;
+    height: 500px;
+    overflow: hidden;
+    transform: rotate(-3deg);
+    margin-left: -250px;
+    margin-top: -50px;
+}
+.aboutBg {
+  width: 100%;
+  margin-top: -250px;
+  transform: rotate(3deg);
+  height: 1000px;
+  @include bgi-parallex('HAN_1383.jpg');
+  h2 {
+  position: relative;
+  z-index: 2;
+  padding-top: 340px;
+  padding-left: 350px;
+  margin-left: 5%;
+  font-size: 34px;
+  width: 30%;
+    span {
+    position: relative;
+    font-size: 26px;
+    }
+  }
+}
+.box {
+  position: relative;
+  z-index: -1;
+  background-color: rgba(255,255,255, .8);
+  width: 300px;
+  height: 150px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.boxOrange {
+  position: relative;
+  z-index: -1;
+  background-color: rgba(255,165,0,.8);
+  width: 250px;
+  height: 100px;
+  margin-top: -170px;
+}
+.content p {
+  float: right;
+  width: 30%;
+  margin-right: 45%;
+  height: 100vh;
+  margin-top: 40px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  font-size: 20px;
+  padding: 60px;
+  line-height: 1.4;
+  letter-spacing: 1.8px;
+  border-radius: 60px;
+  padding-top: 40px;
+}
+.imgWrapBottom {
+  display: none;
+  margin-top: -250px;
+  height: 500px;
+  @include bgi-parallex('lobby.jpg');
+  background-position: bottom;
+}
+.decoration {
+  height: 500px;
+  width: 100%;
+  @include bgi-parallex('HAN_1376.jpg');
+}
+.rooms {
+  margin-top: -20px;
+}
+.productList {
+  margin-left: -5%;
+  width: 150%;
+  height: 600px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  a {
+    text-decoration: none;
+  }
+}
+.production {
+  overflow: hidden;
+  float: left;
+  margin-top: -30px;
+  transform: rotate(7deg);
+  width: 10.5%;
+  height: 800px;
+  transition: all .3s;
+}
+.production:hover {
+  width: 12.5%;
+  margin-left: -1%;
+}
+.mask {
+  height: 800px;
+  text-decoration: none;
+  width: 200%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  transform: rotate(-7deg);
+  margin-left: -40px;
+}
+.inner {
+  transition: all .3s;
+  background-color: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: screen;
+  width: 600px;
+  height: 800px;
+  h3 {
+      text-align: center;
+      font-family: Raleway, Arial Black, sans-serif;
+      text-transform: uppercase;
+      font-size: 35px;
+      margin-right: 150px;
+      box-sizing: border-box;
+      line-height: 600px;
+      text-decoration: none;
+      color: #000;
+  }
+}
+.inner:hover {
+  background-color: rgba(0,0,0,0);
+}
+.spaMask {
+  background-image: url("../img/spa_slider/HAN_1420.jpg");
+  background-position: right -40px top;
+}
+.medMask {
+  background-image: url("../img/med_slider/HAN_1623.jpg");
+  background-position: -70px 0;
+  h3 {
+    margin-right: 170px;
+  }
+}
+.legoMask {
+  background-image: url("../img/lego_slider/HAN_1446.jpg");
+  background-position: -300px 0;
+}
+.morMask {
+  background-image: url("../img/mor_slider/HAN_1614.jpg");
+  background-position: -50px 0px;
+}
+.indMask {
+  background-image: url("../img/ind_slider/HAN_1686.jpg");
+  background-position: -60px -90px;
+}
+.backMask{
+  background-image: url("../img/back_slider/HAN_1740.jpg");
+  background-position: 0 -70px;
+  h3 {
+    margin-right: 170px;
+  }
+}
+.wholeMask {
+  background-image: url("../img/lobby_slider/iloveimg_com.jpg");
+  background-position: right 220px top;
+  h3 {
+    margin-right: 280px;
+  }
+}
+.product {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/lobby_others/HAN_1380.jpg');
+  overflow: hidden;
+}
+.product::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10000vh;
+  background-color: rgba(255,255,255,.8);
+}
+.roomContainer {
+  position: relative;
+}
+.slider-wrapper {
+  float: left;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 70%;
+  border-radius: 50%;
+}
+.nivoSlider {
+  z-index: 0;
+  border-radius: 10px;
+}
+.lego .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%;
+  margin: 0 auto;
+}
+.mor .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%;
+  margin: 0 auto;
+}
+.ind .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%;
+  margin: 0 auto;
+}
+.whole .nivo-controlNav.nivo-thumbs-enabled {
+  width: 70%;
+  margin: 0 auto;
+}
+.introRooms {
+  width: 30%;
+  float: left;
+  margin-top: 80px;
+  h2 {
+      text-align: center;
+      font-size: 40px;
+  }
+}
+.facility {
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+  font-size: 20px;
+  margin-bottom: 60px;
+  p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.price {
+  width: 100%;
+  margin-bottom: 20px;
+  float: left;
+  p {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+.oldPrice {
+  font-size: 20px;
+  margin-top: 12px;
+}
+.oldPrice span {
+  text-decoration: line-through;
+}
+.newPrice {
+  color: red;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 3px;
+}
+.btn {
+  display: block;
+  width: 300px;
+  height: 80px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all .3s;
+  margin: 25px auto;
+}
+.btnSpa {
+  color: rgba(0,233,233,1);
+  border: 2px solid rgba(0,233,233,1);
+  background-color: #fff;
+}
+.btnSpa:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0,233,233,1);
+  border: none;
+}
+.btnMed {
+  color: #50AAFF;
+  border: 2px solid #50AAFF;
+  background-color: #fff;
+}
+.btnMed:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: #50AAFF;
+  border: none;
+}
+.btnLego {
+  color: #FFD000;
+  border: 2px solid #FFD000;
+  background-color: #fff;
+}
+.btnLego:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: #FFD000;
+  border: none;
+}
+.btnMor {
+  color: #E7983E;
+  border: 2px solid #E7983E;
+  background-color: #fff;
+}
+.btnMor:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: #E7983E;
+  border: none;
+}
+.btnInd {
+  color: rgba(183,183,183,1);
+  border: 2px solid rgba(183,183,183,1);
+  background-color: #fff;
+}
+.btnInd:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(183,183,183,1);
+  border: none;
+}
+.btnBack {
+  color: rgba(220,180,140,1);
+  border: 2px solid rgba(220,180,140,1);
+  background-color: #fff;
+}
+.btnBack:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(220,180,140,1);
+  border: none;
+}
+.btnWhole{
+  color: red;
+  border: 2px solid red;
+  background-color: #fff;
+}
+.btnWhole:hover {
+  font-size: 30px;
+  color: #fff;
+  background-color: red;
+  border: none;
+}
+@keyframes cover {
+  0% {
+  background-color: rgba(255,255,255,0);
+  }
+  100% {
+  background-color: rgba(255,255,255,.8);
+  }
+}
+.info.bgCover::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 600vh;
+  animation: cover 1.5s;
+  background-color: rgba(255,255,255,.8);
+}
+.info {
+  position: relative;
+  overflow: hidden;
+  background-image: url('../img/lego_slider/HAN_1498.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  h3 {
+  font-size: 26px;
+  line-height: 2.5;
+  }
+  p {
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  }
+}
+.infoWrapper {
+  width: 90%;
+  margin-left: 10%;
+}
+.note {
+  position: relative;
+  padding: 50px;
+  background-color: rgba(255,165,0,.3);
+  transition: all 1s;
+  float: left;
+  width: 50%;
+}
+.note:hover {
+    background-color: rgba(255,165,0,.6);
+}
+.service {
+  position: relative;
+  background-color: rgba(255,192,203,0.3);
+  padding: 50px;
+  transition: all 1s;
+  float: left;
+  width: 40%;
+}
+.service:hover {
+  background-color: rgba(255,192,203,.6);
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.text-focus-in {
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+          animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+}
+.map {
+  @include bgi-parallex('./lobby_others/HAN_1381.jpg');
+  background-attachment: scroll;
+  #map {
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 50%;
+    height: 800px;
+  }
+  p {
+    float: left;
+    width: 25%;
+    padding: 50px 1.5%;
+    margin-top: 200px;
+    font-size: 22px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    background: rgba(255,255,255,.5);
+    border-radius: 20px;
+  }
+}
+#payment {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  h3 {
+    margin-left: 30px;
+    margin-top: 100px;
+    font-size: 26px;
+    position: relative;
+  }
+  p {
+    position: relative;
+    line-height: 2;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 100px;
+  }
+  .bg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: -10px 0px 100px #fff inset;
+  }
+  .transfer {
+    position: relative;
+    @include bgi-parallex('./mor_slider/HAN_1556.jpg')
+    background-attachment: scroll;
+    width: 33.33333%;
+    float: left;
+    height: 900px;
+  }
+  .callOff {
+    position: relative;
+    @include bgi-parallex('./lego_others/HAN_1509.jpg')
+    background-attachment: scroll;
+    width: 33.33333%;
+    float: left;
+    height: 900px;
+  }
+  .order {
+    position: relative;
+    @include bgi-parallex('./spa_slider/HAN_1396.jpg')
+    background-attachment: scroll;
+    width: 33.33333%;
+    float: left;
+    height: 900px;
+  }
+}
+.footer {
+  background-image: url(../img/footer_lodyas.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.connect {
+  padding-top: 50px;
+  padding-left: 50px;
+  color: #fff;
+  margin-bottom: 50px;
+  line-height: 2;
+}
+.connectRwd {
+  display: none;
+}
+.copyright {
+  float: left;
+  color: #fff;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.addthis_inline_share_toolbox {
+  clear: none !important;
+}
+#share {
+  float: left;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+.at-style-responsive .at-share-btn {
+  padding: 15px !important;
+}
+#st-1 {
+  float: left;
+  margin-left: 100px;
+  margin-top: -15px;
+}
+#st-1.st-has-labels .st-btn {
+  min-width: 60px !important;
+}
+#st-1 .st-btn > span {
+  min-width: 0 !important;
+}
+@import 'mediaQuery';

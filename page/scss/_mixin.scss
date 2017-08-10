@@ -1,0 +1,6 @@
+@mixin bgi-parallex($img) { 
+  background-image: url("../img/#{$img}");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

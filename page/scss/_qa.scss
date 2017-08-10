@@ -1,0 +1,187 @@
+$color: #0BADF7;
+$light: lighten($color, 25%);
+$dark: darken($color, 15%);
+
+.rwdQa::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1015px;
+}
+.rwdQa:first-child::before {
+  @include bgi-parallex('./ind_others/HAN_1676.jpg');
+  // filter: blur(0px);
+  background-attachment: scroll;
+}
+.rwdQa:nth-child(2)::before {
+  @include bgi-parallex('./ind_others/HAN_1674.jpg');
+  // filter: blur(0px);
+  background-attachment: scroll;
+  height: 120vh;
+}
+.rwdQa:nth-child(3)::before {
+  @include bgi-parallex('./ind_others/HAN_1675.jpg');
+  // filter: blur(0px);
+  background-attachment: scroll;
+}
+.rwdQa {
+  min-height: 650px;
+  overflow: hidden;
+  perspective: 900;
+  color: #000;
+  position: relative;
+  box-shadow: 0 -10px 0 0 #0BADF7;
+  width: 33.33333%;
+  float: left;
+}
+.rwdQaList::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 500vh;
+  background-color: #fff;
+  opacity: .7;
+}
+.rwdQaList {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+#qa .transition, #qa p, #qa ul li i:before, #qa ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+#qa .flipIn, #qa ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, h3 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#qa {
+  width: 100%;
+  perspective: 900;
+  background-color: #dce7eb;
+  color: rgba(48, 69, 92, 0.8);
+}
+
+#qa .qaList {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 90px;
+  border-top: 10px solid #0BADF7;
+  background-color: #fefffa;
+  width: 80%;
+  padding: 30px;
+  transition: all .6s;
+}
+#qa .qaList:hover {
+  box-shadow: 12px 12px 15px -3px rgba(0,0,0,.3);
+  transform: translateX(-10px) translateY(-10px);
+}
+#qa h3 {
+  color: $light;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 30px;
+  padding-right: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+#qa p {
+  color: $dark;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+#qa ul {
+  list-style: none;
+  perspective: 900;
+  // padding: 0;
+  margin: 0;
+}
+#qa ul li {
+  line-height: 1.5;
+  position: relative;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+#qa ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+#qa ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+#qa ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+#qa ul li:last-of-type {
+  padding-bottom: 0;
+}
+#qa ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+#qa ul li i:before, #qa ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #0BADF7;
+  width: 3px;
+  height: 9px;
+}
+#qa ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+#qa ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+#qa ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+#qa ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+#qa ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+#qa ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
