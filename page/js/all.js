@@ -89,11 +89,12 @@ $(document).ready(function() {
 	     }
 
 	     var infoTargetPos = $('.info').offset().top;
-	     if ((infoTargetPos - 800) <= scrollPos) {
+       var infoHeight = $('.info').outerHeight();
+	     if ((infoTargetPos - infoHeight) <= scrollPos) {
 	     	$('.info').addClass('bgCover');
 	     }
 	     var noteTargetPos = $('.note').offset().top;
-	     if ((noteTargetPos - 600) <= scrollPos) {
+	     if ((noteTargetPos - infoHeight / 2) <= scrollPos) {
 	     	$('.info p').addClass('text-focus-in');
 	     }
 	});
@@ -109,15 +110,17 @@ $(document).ready(function() {
     event.preventDefault();
     var target = $(this).attr('href');
     var targetPos = $(target).offset().top;
-    $('html, body').animate({scrollTop: targetPos - 50}, 1000);
+    var targetHeight = $(target).outerHeight();
+    var windowHeight = $(window).height();
+    $('html, body').animate({scrollTop: targetPos - windowHeight / 2 + targetHeight / 2}, 1000);
   });
 
-  $('.scrollDown').on('click', function(event) {
-    event.preventDefault();
-    var target = $(this).attr('href');
-    var targetPos = $(target).offset().top;
-    $('html, body').animate({scrollTop: targetPos - 100}, 1000);
-  });
+  // $('.scrollDown').on('click', function(event) {
+  //   event.preventDefault();
+  //   var target = $(this).attr('href');
+  //   var targetPos = $(target).offset().top;
+  //   $('html, body').animate({scrollTop: targetPos - 100}, 1000);
+  // });
 
 	$('.room').on('click', function(event) {
     event.preventDefault();

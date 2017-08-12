@@ -602,8 +602,7 @@ table {
 body, button {
   outline: none;
   overflow-x: hidden;
-  font-family: 'Noto Sans TC', sans-serif;
-  background-color: rgba(11, 173, 247, 0.1); }
+  font-family: 'Noto Sans TC', sans-serif; }
 
 ::-moz-selection {
   background: #0BADF7; }
@@ -713,7 +712,6 @@ body, button {
   background-attachment: fixed; }
 
 .header {
-  margin-top: 50px;
   width: 120%;
   overflow: hidden;
   -webkit-transform: rotate(-3deg);
@@ -1484,8 +1482,6 @@ body, button {
     padding: 40px; } }
 
 @media (max-width: 1024px) {
-  .coverImg {
-    display: none; }
   .wow {
     -webkit-animation-name: none !important;
     animation-name: none !important;
@@ -1606,7 +1602,7 @@ body, button {
   .top {
     width: 44px;
     height: 44px;
-    bottom: 50px; }
+    bottom: 128px; }
   .line {
     width: 44px;
     height: 44px;
@@ -1646,8 +1642,8 @@ body, button {
     background-color: #b99989;
     text-align: center; }
   .rooms h3 {
-    font-size: 30px;
-    margin-right: 0; }
+    font-size: 20px;
+    margin-right: 80px; }
   .spaMask {
     background-position: -300px -350px; }
   .medMask {

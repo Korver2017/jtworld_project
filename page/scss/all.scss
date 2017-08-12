@@ -13,7 +13,6 @@ body, button {
   outline: none;
   overflow-x: hidden;
   font-family: 'Noto Sans TC', sans-serif;
-  background-color: rgba(11,173,247,.1);
 }
 ::selection {
   background: $color;
@@ -99,7 +98,6 @@ body, button {
   @include bgi-parallex('cover.jpg');
 }
 .header {
-    margin-top: 50px;
     width: 120%;
     overflow: hidden;
     transform: rotate(-3deg);

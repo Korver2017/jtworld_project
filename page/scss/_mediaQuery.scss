@@ -233,9 +233,6 @@ $light: lighten($color, 40%);
   }
 }
 @media(max-width: 1024px){
-  .coverImg {
-    display: none;
-  }
   .wow {
       animation-name: none !important;
       visibility: visible !important;
@@ -385,7 +382,7 @@ $light: lighten($color, 40%);
   .top {
     width: 44px;
     height: 44px;
-    bottom: 50px;
+    bottom: 128px;
   }
   .line {
     width: 44px;
@@ -436,8 +433,8 @@ $light: lighten($color, 40%);
       text-align: center;
   }
   .rooms h3 {
-    font-size: 30px;
-    margin-right: 0;
+    font-size: 20px;
+    margin-right: 80px;
   }
   .spaMask {
       background-position: -300px -350px;
