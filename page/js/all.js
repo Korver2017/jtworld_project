@@ -99,13 +99,6 @@ $(document).ready(function() {
 	     }
 	});
 
-  $('.scroll').on('click', function(event) {
-    event.preventDefault();
-    var target = $(this).attr('href');
-    var targetPos = $(target).offset().top;
-    $('html, body').animate({scrollTop: targetPos - 200}, 1000);
-  });
-
 	$('.scrollTop').on('click', function(event) {
     event.preventDefault();
     var target = $(this).attr('href');
