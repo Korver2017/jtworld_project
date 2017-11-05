@@ -86,13 +86,22 @@ body, button {
 .nav.open {
   transform: translateX(0);
 }
+.coverWrap {
+  width: 100%;
+  height: 250px;
+}
 .coverImg {
   width: 100%;
-  margin-bottom: -100px;
-  min-width: 1500px;
+  height: 320px;
+  background: #000 url('../img/cover_4.png') no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
 }
 .headerCover {
   margin-bottom: -100px;
+  width: 100%;
   height: 500px;
   width: 100%;
   @include bgi-parallex('cover.jpg');

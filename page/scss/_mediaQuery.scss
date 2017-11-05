@@ -40,7 +40,7 @@ $light: lighten($color, 40%);
   }
   .slider-wrapper {
     float: none;
-    width: 100%;
+    width: 75%;
     border-radius: 50%;
   }
   .introRooms {
@@ -89,6 +89,9 @@ $light: lighten($color, 40%);
   }
 }
 @media(max-width: 1680px){
+  .coverImg {
+    height: 300px;
+  }
   .content p {
     width: 30%;
     margin-right: 40%;
@@ -202,6 +205,9 @@ $light: lighten($color, 40%);
   }
 }
 @media(max-width: 1030px){
+  .coverImg {
+    height: 290px;
+  }
   .content p {
     width: 55%;
     margin-right: 30%;
@@ -233,6 +239,13 @@ $light: lighten($color, 40%);
   }
 }
 @media(max-width: 1024px){
+  .coverImg {
+    background-image: url('../img/cover_3.png');
+    height: 500px;
+  }
+  .coverWrap {
+    height: 450px;
+  }
   .wow {
       animation-name: none !important;
       visibility: visible !important;
@@ -306,10 +319,6 @@ $light: lighten($color, 40%);
   }
 }
 @media(max-width: 768px){
-  .wow {
-      animation-name: none !important;
-      visibility: visible !important;
-  }
   .line:hover {
     transform: translateX(0) translateY(0);
   }
@@ -336,7 +345,10 @@ $light: lighten($color, 40%);
     background-color: #0BADF7;
   }
   .theme-default .nivo-controlNav.nivo-thumbs-enabled {
-    width: 80%;
+    width: 100%;
+  }
+  .whole .theme-default .nivo-controlNav.nivo-thumbs-enabled {
+    width: 100%;
   }
   .facility {
     width: 50%;
@@ -407,6 +419,9 @@ $light: lighten($color, 40%);
 @media(max-width: 414px){
   .top {
     bottom: 50px;
+  }
+  .coverWrap {
+    height: 0;
   }
   .coverImg {
     display: none;
