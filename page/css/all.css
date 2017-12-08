@@ -1644,7 +1644,7 @@ body, button {
   .hide {
     position: relative;
     display: block;
-    padding-top: 50px;
+    padding-top: 20px;
     background-color: #b99989; }
   hr {
     border: 2px solid;
@@ -1653,10 +1653,10 @@ body, button {
   .hide > h2 {
     color: #D1CDC8;
     width: 150px;
-    font-size: 40px;
+    font-size: 20px;
     margin: 0 auto;
     margin-top: -30px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     background-color: #b99989;
     text-align: center; }
   .rooms h3 {
@@ -1673,7 +1673,7 @@ body, button {
   .indMask {
     background-position: -60px -520px; }
   .product h2 {
-    font-size: 26px; }
+    font-size: 20px; }
   #slider2 {
     margin-top: 30px; }
   .theme-default .nivo-controlNav.nivo-thumbs-enabled img {
@@ -1684,16 +1684,25 @@ body, button {
     margin-top: 10px; }
   .facility {
     width: 100%;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 20px; }
   .facility p {
     float: none;
-    width: 100%; }
+    width: 100%;
+    font-size: 14px; }
   .price {
     float: none;
     width: 100%; }
   .price p {
     float: none;
-    width: 100%; }
+    width: 100%;
+    font-size: 14px;
+    margin: 10px auto; }
+  .btn {
+    width: 200px;
+    height: 50px; }
+  .btn:last-child {
+    margin-bottom: 25px; }
   .cover {
     width: 100%; }
   .rwdQa {

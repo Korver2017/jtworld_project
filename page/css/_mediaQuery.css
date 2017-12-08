@@ -33,7 +33,7 @@
     transform: rotate(0deg); }
   .slider-wrapper {
     float: none;
-    width: 100%;
+    width: 75%;
     border-radius: 50%; }
   .introRooms {
     float: none;
@@ -67,6 +67,8 @@
     height: 1200px; } }
 
 @media (max-width: 1680px) {
+  .coverImg {
+    height: 300px; }
   .content p {
     width: 30%;
     margin-right: 40%;
@@ -148,6 +150,8 @@
     width: 100%; } }
 
 @media (max-width: 1030px) {
+  .coverImg {
+    height: 290px; }
   .content p {
     width: 55%;
     margin-right: 30%; }
@@ -171,6 +175,11 @@
     padding: 40px; } }
 
 @media (max-width: 1024px) {
+  .coverImg {
+    background-image: url("../img/cover_3.png");
+    height: 500px; }
+  .coverWrap {
+    height: 450px; }
   .wow {
     -webkit-animation-name: none !important;
     animation-name: none !important;
@@ -230,10 +239,6 @@
     float: none; } }
 
 @media (max-width: 768px) {
-  .wow {
-    -webkit-animation-name: none !important;
-    animation-name: none !important;
-    visibility: visible !important; }
   .line:hover {
     -webkit-transform: translateX(0) translateY(0);
     -ms-transform: translateX(0) translateY(0);
@@ -251,16 +256,19 @@
   .aboutBg {
     background-attachment: scroll; }
   .content p {
-    margin-top: 300px; }
+    margin-top: 370px; }
   .product::before {
     background-color: rgba(255, 255, 255, 0.9); }
   .product {
     background-image: none;
     background-color: #0BADF7; }
   .theme-default .nivo-controlNav.nivo-thumbs-enabled {
-    width: 80%; }
+    width: 100%; }
+  .whole .theme-default .nivo-controlNav.nivo-thumbs-enabled {
+    width: 100%; }
   .facility {
-    width: 50%; }
+    width: 50%;
+    margin-top: 80px; }
     .facility p {
       margin: 0;
       float: left;
@@ -307,6 +315,12 @@
     display: none; } }
 
 @media (max-width: 414px) {
+  .top {
+    bottom: 50px; }
+  .coverWrap {
+    height: 0; }
+  .coverImg {
+    display: none; }
   .hide {
     position: relative;
     display: block;
@@ -319,15 +333,15 @@
   .hide > h2 {
     color: #D1CDC8;
     width: 150px;
-    font-size: 40px;
+    font-size: 20px;
     margin: 0 auto;
     margin-top: -30px;
     padding-bottom: 70px;
     background-color: #b99989;
     text-align: center; }
   .rooms h3 {
-    font-size: 30px;
-    margin-right: 0; }
+    font-size: 20px;
+    margin-right: 80px; }
   .spaMask {
     background-position: -300px -350px; }
   .medMask {
@@ -339,7 +353,7 @@
   .indMask {
     background-position: -60px -520px; }
   .product h2 {
-    font-size: 26px; }
+    font-size: 20px; }
   #slider2 {
     margin-top: 30px; }
   .theme-default .nivo-controlNav.nivo-thumbs-enabled img {
@@ -349,7 +363,8 @@
   .introRooms {
     margin-top: 10px; }
   .facility {
-    width: 100%; }
+    width: 100%;
+    margin-top: 30px; }
   .facility p {
     float: none;
     width: 100%; }
@@ -361,10 +376,7 @@
     width: 100%; }
   .cover {
     width: 100%; }
-  #qa {
-    padding-bottom: 30px; }
   .rwdQa {
-    margin: 40px auto;
     left: 0;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -388,5 +400,5 @@
     height: 0; } }
 
 @media (max-width: 320px) {
-  .p {
-    height: 0; } }
+  .product h2 {
+    font-size: 24px; } }
