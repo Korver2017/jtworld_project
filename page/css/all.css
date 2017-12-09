@@ -1107,6 +1107,15 @@ body, button {
   background-color: red;
   border: none; }
 
+.setWrapper {
+  background-color: #eee; }
+
+.set {
+  margin: 100px auto;
+  width: 90%;
+  background-color: orange;
+  padding: 100px; }
+
 @-webkit-keyframes cover {
   0% {
     background-color: rgba(255, 255, 255, 0); }

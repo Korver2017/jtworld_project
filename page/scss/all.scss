@@ -472,6 +472,24 @@ body, button {
   background-color: red;
   border: none;
 }
+
+
+
+
+// 1209 新增套裝行程
+.setWrapper {
+  background-color: #eee;
+}
+.set {
+  margin: 100px auto;
+  width: 90%;
+  background-color: orange;
+  padding: 100px;
+}
+
+
+
+
 @keyframes cover {
   0% {
   background-color: rgba(255,255,255,0);
