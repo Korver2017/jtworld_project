@@ -1109,12 +1109,26 @@ body, button {
 
 .setWrapper {
   background-color: #eee; }
-
-.set {
-  margin: 100px auto;
-  width: 90%;
-  background-color: orange;
-  padding: 100px; }
+  .setWrapper .set {
+    margin: 5%;
+    width: 90%;
+    background-color: orange; }
+    .setWrapper .set .set-content {
+      background-color: pink;
+      width: 50%;
+      float: left; }
+      .setWrapper .set .set-content h3 {
+        font-size: 26px;
+        padding: 10px 0; }
+      .setWrapper .set .set-content p {
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+        padding: 50px; }
+    .setWrapper .set .unit {
+      width: 50%;
+      height: 300px;
+      float: left;
+      background-color: black; }
 
 @-webkit-keyframes cover {
   0% {
@@ -1144,7 +1158,8 @@ body, button {
   background-image: url("../img/lego_slider/HAN_1498.jpg");
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  clear: both; }
   .info h3 {
     font-size: 26px;
     line-height: 2.5; }
